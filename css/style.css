@@ -25,3 +25,139 @@ header, main {
     gap: 5px;
   }
 }
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background: #4a90e2;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #357ab8;
+}
+
+#gallery-section, #create-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+#add-artwork-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#add-artwork-form input,
+#add-artwork-form button {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+#search {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#artwork-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.art-card {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  width: 220px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.art-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.art-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.art-card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+#draw-canvas {
+  display: block;
+  margin: 20px auto;
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+}
+
+.dark-theme {
+  background: #181818;
+  color: #f4f4f4;
+}
+
+.dark-theme #gallery-section,
+.dark-theme #create-section {
+  background: #232323;
+  color: #f4f4f4;
+}
+
+.dark-theme .art-card {
+  background: #222;
+  border-color: #333;
+  color: #f4f4f4;
+}
+
+.dark-theme button {
+  background: #222;
+  color: #f4f4f4;
+  border: 1px solid #4a90e2;
+}
+
+.dark-theme button:hover {
+  background: #4a90e2;
+  color: #fff;
+}

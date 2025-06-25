@@ -17,5 +17,19 @@
       <button id="create-art-btn">Create Art</button>
     </nav>
   </header>
+    <main>
+    <section id="gallery-section">
+      <input type="text" id="search" placeholder="Search artworks...">
+      <div id="artwork-list"></div>
+    </section>
+    <section id="create-section" style="display:none;">
+      <h2>Draw Your Art</h2>
+      <canvas id="draw-canvas" width="500" height="400" style="border:1px solid #000;"></canvas>
+      <button id="clear-canvas-btn">Clear Canvas</button>
+      <label for="color-picker">Choose Color:</label>
+      <input type="color" id="color-picker" value="#000000">
+      <button id="eraser-btn" type="button">Eraser</button>
+    </section>
+  </main>
 </body>
 </html>

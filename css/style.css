@@ -1,0 +1,27 @@
+intro {
+  text-align: center; 
+  font-size: 1.1rem;
+  margin: 10px auto 20px auto;
+  max-width: 600px;
+  color: #555; 
+}
+
+header, main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  #draw-canvas {
+    width: 100% !important;
+    height: 250px !important;
+  }
+  .art-card img {
+    width: 100% !important;
+  }
+  nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

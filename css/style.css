@@ -25,9 +25,10 @@ header, main {
     gap: 5px;
   }
 }
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
   color: #222;
   margin: 0;
   padding: 0;
@@ -92,8 +93,8 @@ button:hover {
 }
 
 #artwork-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   justify-content: center;
 }
@@ -106,7 +107,30 @@ button:hover {
   width: 220px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.04);
   text-align: center;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.3s, transform 0.3s
+}
+
+.art-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transform: translateY(-4px) scale(1.03);
+}
+
+button, input[type="color"] {
+  border-radius: 4px;
+  outline: none;
+}
+
+button:focus, input:focus {
+  box-shadow: 0 0 0 2px #4a90e255;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 40px;
+  border-top: 1px solid #e0e0e0;
 }
 
 .art-card img {

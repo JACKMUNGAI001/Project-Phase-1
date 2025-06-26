@@ -37,7 +37,7 @@ function fetchArtworks(query = "painting") {
     .then(res => res.json())
     .then(data => {
       // Limit to first 20 artworks for performance
-      const ids = data.objectIDs ? data.objectIDs.slice(0, 5) : [];
+      const ids = data.objectIDs ? data.objectIDs.slice(0, 9) : [];
       return Promise.all(
         ids.map(id =>
           fetch(API_OBJECT_URL + id)

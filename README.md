@@ -71,9 +71,7 @@ If you want to run the project locally, you'll need:
 - JavaScript (ES6)
 - [The Met Museum Collection API](https://metmuseum.github.io/)
 
-## Support and Contact Details
-
-If you have any questions, suggestions, or need assistance, please contact:
+## Contact Details
 
 - Email: <jacksonmungai001@gmail.com>
 

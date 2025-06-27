@@ -13,7 +13,6 @@ const colorPicker = document.getElementById("color-picker");
 const eraserBtn = document.getElementById("eraser-btn");
 const clearCanvasBtn = document.getElementById("clear-canvas-btn");
 
-
 //  Navigation 
 viewGalleryBtn.addEventListener("click", () => {
   gallerySection.style.display = "";
@@ -68,7 +67,7 @@ function renderArtworks(artworks) {
   });
 }
 
-//  Search Artworks
+//  Denounced Search Artworks
 let searchTimeout;
 if (searchInput) {
   searchInput.addEventListener("input", e => {
